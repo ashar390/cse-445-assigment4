@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Student note:
-  This schema is for Assignment 4 and enforces the exact NationalParks structure.
-  NearstAirport spelling is intentionally kept to match assignment test expectations.
+  Assignment 4
+  XSD file for the National Parks XML
+  This schema defines the structure that my XML file follows.
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns="http://venus.sod.asu.edu/WSRepository/xml"
@@ -10,33 +10,54 @@
   elementFormDefault="qualified"
   attributeFormDefault="unqualified">
 
+  <!-- Root element for the whole document -->
   <xsd:element name="NationalParks" type="NationalParksType" />
 
+  <!-- This type represents the root container that holds many NationalPark elements -->
   <xsd:complexType name="NationalParksType">
     <xsd:sequence>
       <xsd:element name="NationalPark" type="NationalParkType" minOccurs="1" maxOccurs="unbounded" />
     </xsd:sequence>
   </xsd:complexType>
 
+  <!-- This type represents one NationalPark entry -->
   <xsd:complexType name="NationalParkType">
     <xsd:sequence>
+      <!-- Park name -->
       <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1" />
+
+      <!-- One or more phone numbers are allowed -->
       <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+
+      <!-- Each park must have exactly one address -->
       <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1" />
     </xsd:sequence>
+
+    <!-- Rating is optional, so some parks can have it and some can leave it out -->
     <xsd:attribute name="Rating" type="xsd:decimal" use="optional" />
   </xsd:complexType>
 
+  <!-- This type represents the Address element and its child elements -->
   <xsd:complexType name="AddressType">
     <xsd:sequence>
+      <!-- Street/building number -->
       <xsd:element name="Number" type="xsd:int" minOccurs="1" maxOccurs="1" />
+
+      <!-- Street name -->
       <xsd:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1" />
+
+      <!-- City name -->
       <xsd:element name="City" type="xsd:string" minOccurs="1" maxOccurs="1" />
+
+      <!-- State abbreviation -->
       <xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="1" />
+
+      <!-- Zip code -->
       <xsd:element name="Zip" type="xsd:int" minOccurs="1" maxOccurs="1" />
     </xsd:sequence>
+
+    <!-- Required airport attribute for every address -->
     <xsd:attribute name="NearstAirport" type="xsd:string" use="required" />
   </xsd:complexType>
 
 </xsd:schema>
-

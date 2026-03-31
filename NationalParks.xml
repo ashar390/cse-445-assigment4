@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<NationalParks xmlns="http://venus.sod.asu.edu/WSRepository/xml"
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://raw.githubusercontent.com/ashar390/cse-445-assigment4/main/NationalParks.xsd">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<NationalParks
+  xmlns="http://venus.sod.asu.edu/WSRepository/xml"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://raw.githubusercontent.com/ashar390/cse-445-assigment4/main/NationalParks.xsd">
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
     <Phone>928-638-7496</Phone>
     <Phone>888-297-2757</Phone>
     <Phone>866-499-2574</Phone>
-    <Address NearestAirport="FlagStaff">
+    <Address NearstAirport="FlagStaff">
       <Number>8</Number>
       <Street>S Entrance Road</Street>
       <City>Grand Canyon</City>
@@ -15,10 +16,11 @@
       <Zip>86023</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.8">
-    <Name>Yellowstone National Park</Name>
+    <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
-    <Address NearestAirport="JacksonHole">
+    <Address NearstAirport="JacksonHole">
       <Number>2</Number>
       <Street>Officers Row</Street>
       <City>Yellowstone National Park</City>
@@ -26,11 +28,12 @@
       <Zip>82190</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
-    <Name>Yosemite National Park</Name>
+    <Name>Yosemite</Name>
     <Phone>209-372-0200</Phone>
     <Phone>209-372-1000</Phone>
-    <Address NearestAirport="FresnoYosemite">
+    <Address NearstAirport="FresnoYosemite">
       <Number>9035</Number>
       <Street>Village Drive</Street>
       <City>Yosemite Valley</City>
@@ -38,21 +41,23 @@
       <Zip>95389</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.7">
-    <Name>Zion National Park</Name>
+    <Name>Zion</Name>
     <Phone>435-772-3256</Phone>
-    <Address NearestAirport="StGeorgeRegional">
+    <Address NearstAirport="StGeorgeRegional">
       <Number>1</Number>
-      <Street>Zion Park Boulevard</Street>
+      <Street>Zion Park Blvd</Street>
       <City>Springdale</City>
       <State>UT</State>
       <Zip>84767</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
-    <Name>Rocky Mountain National Park</Name>
+    <Name>Rocky Mountain</Name>
     <Phone>970-586-1206</Phone>
-    <Address NearestAirport="DenverInternational">
+    <Address NearstAirport="DenverInternational">
       <Number>1000</Number>
       <Street>US Highway 36</Street>
       <City>Estes Park</City>
@@ -60,11 +65,12 @@
       <Zip>80517</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.6">
-    <Name>Acadia National Park</Name>
+    <Name>Acadia</Name>
     <Phone>207-288-3338</Phone>
     <Phone>207-288-8800</Phone>
-    <Address NearestAirport="HancockCountyBarHarbor">
+    <Address NearstAirport="HancockCountyBarHarbor">
       <Number>20</Number>
       <Street>McFarland Hill Drive</Street>
       <City>Bar Harbor</City>
@@ -72,10 +78,11 @@
       <Zip>4609</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
-    <Name>Olympic National Park</Name>
+    <Name>Olympic</Name>
     <Phone>360-565-3130</Phone>
-    <Address NearestAirport="SeattleTacoma">
+    <Address NearstAirport="SeattleTacoma">
       <Number>3002</Number>
       <Street>Mount Angeles Road</Street>
       <City>Port Angeles</City>
@@ -83,10 +90,11 @@
       <Zip>98362</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.5">
-    <Name>Everglades National Park</Name>
+    <Name>Everglades</Name>
     <Phone>305-242-7700</Phone>
-    <Address NearestAirport="MiamiInternational">
+    <Address NearstAirport="MiamiInternational">
       <Number>40001</Number>
       <Street>State Road 9336</Street>
       <City>Homestead</City>
@@ -94,11 +102,12 @@
       <Zip>33034</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
-    <Name>Glacier National Park</Name>
+    <Name>Glacier</Name>
     <Phone>406-888-7800</Phone>
     <Phone>406-888-5751</Phone>
-    <Address NearestAirport="GlacierParkInternational">
+    <Address NearstAirport="GlacierParkInternational">
       <Number>64</Number>
       <Street>Grinnell Drive</Street>
       <City>West Glacier</City>
@@ -106,10 +115,11 @@
       <Zip>59936</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark>
-    <Name>Great Smoky Mountains National Park</Name>
+    <Name>Great Smoky Mountains</Name>
     <Phone>865-436-1200</Phone>
-    <Address NearestAirport="McGheeTyson">
+    <Address NearstAirport="McGheeTyson">
       <Number>107</Number>
       <Street>Park Headquarters Road</Street>
       <City>Gatlinburg</City>
@@ -117,10 +127,11 @@
       <Zip>37738</Zip>
     </Address>
   </NationalPark>
+
   <NationalPark Rating="4.4">
-    <Name>Joshua Tree National Park</Name>
+    <Name>Joshua Tree</Name>
     <Phone>760-367-5500</Phone>
-    <Address NearestAirport="PalmSpringsInternational">
+    <Address NearstAirport="PalmSpringsInternational">
       <Number>74485</Number>
       <Street>National Park Drive</Street>
       <City>Twentynine Palms</City>
@@ -129,3 +140,4 @@
     </Address>
   </NationalPark>
 </NationalParks>
+

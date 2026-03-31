@@ -1,4 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Student note:
+  This schema is for Assignment 4 and enforces the exact NationalParks structure.
+  NearstAirport spelling is intentionally kept to match assignment test expectations.
+-->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns="http://venus.sod.asu.edu/WSRepository/xml"
   targetNamespace="http://venus.sod.asu.edu/WSRepository/xml"

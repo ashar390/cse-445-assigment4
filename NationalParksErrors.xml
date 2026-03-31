@@ -1,13 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Student note:
-  This file intentionally contains the required five errors for Assignment 4 testing.
-  The malformed closing-tag error is left near the end on purpose.
+  Assignment 4
+  Error XML file for testing validation
+  This file intentionally includes the required errors from the assignment.
 -->
 <NationalPark
   xmlns="http://venus.sod.asu.edu/WSRepository/xml"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://raw.githubusercontent.com/ashar390/cse-445-assigment4/main/NationalParks.xsd">
+
+  <!-- Error 1: root element is NationalPark instead of NationalParks -->
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
     <Phone>928-638-7496</Phone>
@@ -22,6 +24,7 @@
     </Address>
   </NationalPark>
 
+  <!-- Error 2: required airport attribute is missing -->
   <NationalPark Rating="4.8">
     <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
@@ -34,6 +37,7 @@
     </Address>
   </NationalPark>
 
+  <!-- Error 3: duplicate Name element -->
   <NationalPark>
     <Name>Yosemite</Name>
     <Name>Yosemite Duplicate Name</Name>
@@ -48,6 +52,7 @@
     </Address>
   </NationalPark>
 
+  <!-- Error 4: Phone element is missing -->
   <NationalPark Rating="4.7">
     <Name>Zion</Name>
     <Address NearstAirport="StGeorgeRegional">
@@ -59,6 +64,7 @@
     </Address>
   </NationalPark>
 
+  <!-- Remaining parks are mostly normal so validation can continue -->
   <NationalPark>
     <Name>Rocky Mountain</Name>
     <Phone>970-586-1206</Phone>
@@ -133,6 +139,7 @@
     </Address>
   </NationalPark>
 
+  <!-- Error 5: Address closing tag is intentionally missing near the end -->
   <NationalPark Rating="4.4">
     <Name>Joshua Tree</Name>
     <Phone>760-367-5500</Phone>
@@ -143,5 +150,5 @@
       <State>CA</State>
       <Zip>92277</Zip>
   </NationalPark>
-</NationalPark>
 
+</NationalPark>
